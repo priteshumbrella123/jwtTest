@@ -153,3 +153,5 @@ AUTH_USER_MODEL = "jwtimple.User"
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 #CSRF_COOKIE_SECURE = False
 STATIC_URL = '/static/'
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
